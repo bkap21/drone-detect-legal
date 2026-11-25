@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drone Detect Privacy Policy</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; color: #1b1f24; background: #fff; }
+  h1 { font-size: 1.8em; margin-bottom: 0; } h2 { font-size: 1.2em; margin-top: 2em; }
+  table { border-collapse: collapse; width: 100%; font-size: .95em; } th, td { border: 1px solid #d0d7de; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #f6f8fa; } .muted { color: #57606a; }
+</style>
+</head>
+<body>
+<h1>Drone Detect Privacy Policy</h1>
+<p class="muted">Effective date: November 24, 2026 · App: Drone Detect (<code>com.dronedetect.app</code>), version 1.3.1 and later</p>
+
+<h2>Summary</h2>
+<ul>
+  <li><strong>Camera video and images never leave your phone.</strong> Drone detection runs entirely on the device.</li>
+  <li><strong>An account is optional.</strong> Without one, the app sends nothing to our servers. The Google Firebase SDK built into the app (used for push notifications) may still contact Google, for example to register a Firebase installation ID.</li>
+  <li>If you turn on <strong>multi-phone alerts</strong> by creating an account, we store only what is needed to send alerts between your own phones: your email address, your phones' names and roles, a notification token, and the time and confidence score of each alert.</li>
+  <li>We do not sell or share your data, show ads, or use analytics or tracking.</li>
+  <li>You can delete your account and its data at any time, in the app or by request (see <a href="#deletion">Deleting your account</a>).</li>
+</ul>
+
+<h2>1. Using the app without an account</h2>
+<p>Detection, alerts on the same phone, your settings and any IP-camera addresses you add are stored only on your phone. The Google Firebase SDK included in the app may contact Google even without an account, for example to create a random Firebase installation ID used to deliver push notifications; this is handled by Google under its own terms, and we do not receive it unless you turn on multi-phone alerts. IP-camera addresses, including any username or password in them, are kept in Android's encrypted storage and are excluded from device backups. When you view an IP camera, your phone connects directly to that camera. We do not receive that traffic.</p>
+
+<h2>2. Data stored if you create an account (multi-phone alerts)</h2>
+<table>
+  <tr><th>Data</th><th>Why</th><th>How long we keep it</th></tr>
+  <tr><td>Email address and password (the password is stored only as a secure hash by our sign-in provider)</td><td>To sign in, send the sign-up or password-reset code, and identify your account</td><td>Until you delete your account</td></tr>
+  <tr><td>A random account ID</td><td>To keep your phones and alerts together</td><td>Until you delete your account</td></tr>
+  <tr><td>Per phone: the name you give it, its role (camera or main phone), a random ID created by the app, the last time it checked in, the last alert time, and optional quiet hours (start and end time and time-zone offset)</td><td>To show which cameras are online and to respect quiet hours</td><td>Until you remove the phone or delete your account. Automatically deleted after 90 days without a check-in</td></tr>
+  <tr><td>Notification token (Firebase Cloud Messaging) for each main phone</td><td>To deliver drone alerts to your main phone</td><td>Same as the phone entry. Removed when Firebase reports it invalid</td></tr>
+  <tr><td>Alerts: which camera, the time, and a confidence score (0–100%)</td><td>To notify your main phone and show recent alerts</td><td>Automatically deleted after 30 days</td></tr>
+  <tr><td>A daily alert count</td><td>To limit abuse and costs</td><td>Automatically deleted after 2 days</td></tr>
+</table>
+<p>We do <strong>not</strong> collect images, video, audio, location, contacts, advertising IDs or hardware device identifiers. The phone ID is a random value the app generates.</p>
+
+<h2>3. Service providers</h2>
+<ul>
+  <li><strong>Amazon Web Services</strong> (Amazon Cognito for sign-in and sign-up emails; API Gateway, Lambda and DynamoDB for storing the data above), in the United States (Ohio, us-east-2).</li>
+  <li><strong>Google Firebase Cloud Messaging</strong> to deliver push notifications to your main phone. The text of each alert notification (the camera phone's name and the confidence score) passes through Google's Firebase Cloud Messaging service to reach your phone. The Firebase SDK in the app may also contact Google to register a Firebase installation ID and notification token.</li>
+</ul>
+<p>These providers process data only to provide these services to us. Like any internet service, they may briefly process your IP address to deliver requests and protect against abuse; we do not store IP addresses. Our servers keep short-lived technical error logs (7 days) that contain no email addresses, tokens or alert contents.</p>
+
+<h2>4. Security</h2>
+<p>All data sent to our servers is encrypted over HTTPS (TLS). (Video from IP cameras on your own network goes directly from the camera to your phone and may use plain HTTP if the camera only supports that; it never reaches our servers.) Each request is authorized with your sign-in token, and every stored item is tied to your account, so other users cannot read it. Sign-in tokens are kept in Android's encrypted storage on your phone.</p>
+
+<h2 id="deletion">5. Deleting your account</h2>
+<ul>
+  <li><strong>In the app:</strong> Settings → Multi-phone alerts → <em>Delete account</em>. This immediately deletes your account, all your phones and all your alerts from our servers.</li>
+  <li><strong>Without the app:</strong> see <a href="https://bkap21.github.io/drone-detect-legal/delete-account.html">https://bkap21.github.io/drone-detect-legal/delete-account.html</a>, or email <a href="mailto:aj2qg7hm@mail.grokbot.com">aj2qg7hm@mail.grokbot.com</a> from the address you signed up with. We delete the account within 30 days and confirm by email.</li>
+</ul>
+<p>Removing a phone in the app deletes that phone's entry. Uninstalling the app deletes the data stored on that phone.</p>
+
+<h2>6. Your rights</h2>
+<p>Depending on where you live (for example, under the GDPR in the EU/UK or the CCPA/CPRA in California), you may have the right to access, correct, delete or export your data, and to object to or restrict its processing. Email <a href="mailto:aj2qg7hm@mail.grokbot.com">aj2qg7hm@mail.grokbot.com</a> to make a request. We will respond within 30 days. We process account data to provide the multi-phone alert feature you asked for (performance of a contract). We do not sell or "share" personal information as defined by the CCPA. Your data is stored in the United States. You may also complain to your local data-protection authority.</p>
+
+<h2>7. Children</h2>
+<p>Drone Detect is not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has created an account, email us and we will delete it.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, we will update the effective date above. For material changes, we will also notify users in the app.</p>
+
+<h2>9. Contact</h2>
+<p>Bryce Kaplan, United States · <a href="mailto:aj2qg7hm@mail.grokbot.com">aj2qg7hm@mail.grokbot.com</a></p>
+</body>
+</html>
